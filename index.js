@@ -14,4 +14,21 @@ function getComputerChoice(){
     }
 };
 
-getComputerChoice();
+
+let computerSelection = getComputerChoice();
+
+let playerSelection = prompt("Please enter your choice").toLowerCase();
+
+function playRound(playerSelection, computerSelection) {
+
+    if (computerSelection === "Rock" && playerSelection === "scissors" || computerSelection === "Paper" && playerSelection === "rock" || computerSelection === "Scissors" && playerSelection === "paper") {
+        return "You Lose! " + computerSelection + "beats " + playerSelection;
+    }
+    else if (computerSelection === "Rock" && playerSelection === "paper" || computerSelection === "Paper" && playerSelection === "scissors" || computerSelection === "Scissors" && playerSelection === "rock") {
+        return "You Win! " + playerSelection + "beats " + computerSelection;
+    }
+    else {
+        return "Its a tie!";
+    }
+    
+};
