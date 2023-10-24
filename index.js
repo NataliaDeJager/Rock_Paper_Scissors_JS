@@ -32,8 +32,8 @@ function playRound(playerSelection, computerSelection) {
 function game(){
     let computerScore = 0;
     let playerScore = 0;
-
-    for (var i = 0; i < 5; i++){
+    var i = 0;
+    while (i < 5){ // Used while to avoid counting invalid inputs as rounds
 
         let computerSelection = getComputerChoice();
 
@@ -49,6 +49,7 @@ function game(){
                 console.log(computerSelection);
                 let result = playRound(playerSelection, computerSelection);
                 console.log(result[0]);
+                i++;
 
                 if (result[1] === 0){
                     computerScore++;
