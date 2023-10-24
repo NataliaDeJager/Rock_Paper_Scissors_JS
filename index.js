@@ -32,3 +32,5 @@ function playRound(playerSelection, computerSelection) {
     }
     
 };
+
+// There is a problem with the playRound function where its returning a tie for all the games 
