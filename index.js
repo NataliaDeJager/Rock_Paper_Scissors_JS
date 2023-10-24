@@ -1,19 +1,19 @@
 
 let randomNumber = (Math.floor(Math.random() * 3) + 1);
-
+// Selects random number from 1 2 or 3 
 
 function getComputerChoice(){
     if (randomNumber === 1){
-        console.log("Rock");
+        return "Rock";
     }
     else if (randomNumber === 2) {
-        console.log("Paper");
+        return "Paper";
     }
     else {
-        console.log("Scissors");
+        return "Scissors";
     }
 };
-
+// Assigns the number selected to one of the choices either Rock Paper or Scissors for the computer choice. 
 
 let computerSelection = getComputerChoice();
 
